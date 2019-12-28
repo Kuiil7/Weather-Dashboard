@@ -1,0 +1,9 @@
+header {
+    background-color:black;
+    display:block;
+    overflow:hidden;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
