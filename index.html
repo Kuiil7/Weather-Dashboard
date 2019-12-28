@@ -1,48 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <title>Favorite teams</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script>
+  
 
-    <title>Weather Dasboard</title>
-    
 </head>
+
 <body>
-    <div class="container">
-    <header>Weather Dashboard</header>
-    <div class="container2">
-    <section id="search-city-side">
-        <h5>Search for a City:</h5> 
-        <div class="input-group mb-2">
-            <div class="input-group-prepend">
-           
-            <input type="text" class="form-control" aria-label="search-city" aria-describedby="basic-addon1">
-            <span class="btn btn-primary" id="fa-search">                <img src="search_white.png"></img>
-            </span>
-            <button type="submit" class="btn btn-default" id="run-search">
-            </button>
+
+  <div class="container">
+
+  <!-- Easy jQuery - Learn AJAX - how to use .getJSON() - #14 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.14.2/d3.min.js"></script>
+    
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    
+        <title>Weather Dasboard</title>
+        
+    </head>
+    <body>
+        <div class="container">
+        <header>Weather Dashboard</header>
+        <div class="container2">
+        <section id="search-city-side">
+            <h5>Search for a City:</h5> 
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
                
-
+                <input type="text" class="form-control" id="city-search" aria-label="search-city" aria-describedby="basic-addon1">
+                <span class="btn btn-primary" id="fa-search">                <img src="search_white.png"></img>
+                </span>
+                <button type="submit" class="btn btn-default" id="run-search">
+                </button>
+                   
+    
+            </div>
+             </div>
+        </section>
+    
+        <div id="current-weather">
+           <div id="time"><img v-bind:src="'http://openweathermap.org/img/w/' + item + '.png' "  /></div>
+            <div id="city-date"> </div>
+            <div id="temp"></div>
+            <div id="hum"></div>
+            <div id="wind"></div>
+            <div id="uv"></div>
+     </div>
+    
+        <div id="5-day">
         </div>
-         </div>
-    </section>
-
-    <div id="current-weather">
-        <div id="city-date"></div>
-        <div id="Temperature">Temperature:</div>
-        <div id="Humidity">Humidity:</div>
-        <div id="Wind-Speed">Wind Speed: </div>
-        <div id="UV Index">UV Index:</div>
- </div>
-
-    <div id="5-day">
-    </div>
-    </div>
-
-</div>  
+        </div>
+    
+    </div>  
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</html>
+
+
+
+    <script src="./script.js"></script>
+    
+    <div id="footer">
+     Source: Openweather.org 2019
+    </div>
+    
+    </html>

@@ -1,3 +1,30 @@
+@font-face {
+    font-family: OpenWeatherIcons;
+    src: url("../fonts/OpenWeatherIcons.eot");
+    src: url("../fonts/OpenWeatherIcons.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenWeatherIcons.woff2") format("woff2"), url("../fonts/OpenWeatherIcons.woff") format("woff"), url("../fonts/OpenWeatherIcons.ttf") format("truetype"), url("../fonts/OpenWeatherIcons.svg#OpenWeatherIcons") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+
+.owi {
+    display: inline-block;
+    transform: translate(0, 0);
+    text-rendering: auto;
+    font: normal normal 400 14px/1 OpenWeatherIcons;
+    font-size: inherit;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.owi-01d::before {
+    content: "\ea01";
+}
+
+.owi-01n::before {
+    content: "\ea02";
+}
+
+
 header {
     background-color:black;
     display:block;
@@ -11,3 +38,11 @@ header {
 .container2 {
     display: flex;
 }
+
+#footer { 
+    background-color:lightgray;
+    height: 25px;
+    width: 100%;
+    
+    text-align: center;
+    }
