@@ -18,7 +18,7 @@ $(document).ready(function(){
         console.log("Your latitude is: " + lat + " and your longitude is: " + long);
 
   
-        var weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var weatherURL = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
        /* var fiveDay = "http://api.openweathermap.org/data/2.5/forecast?q="+ data.name + data.sys.country; */
 
@@ -30,12 +30,14 @@ $(document).ready(function(){
         type: "GET",
         dataType: "JSON",
         success: function(data, weatherURL) {
-            $('#city-date').html("City: " + data.name  + ' ' + data.sys.country + ' ' + '<img src=' + data.weather[0].icon +  '>'); 
-         
+            $('#city-date').html("City: " + data.name  + ' ' + data.sys.country + ' ' + "<img src='http://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>"); 
+           
+            //$(".icon").html("<img src='http://openweathermap.org/img/w/" //+ data.weather[0].icon + ".png'>");
+
             // /$(".icon").html("<img src=' + icon + '>");
-            $('#temp').html("Temp: " + data.main.temp);
+            $('#temp').html("Temp: " + data.main.temp + "°F");
             $('#hum').html("Hum: " + data.main.humidity);
-            $('#wind').html("Wind: " + data.wind.speed);
+            $('#wind').html("Wind: " + data.wind.speed + ' ' + "MPH");
             //$('#uv').html("UV Index: " + value);
             //console.log(uvIndex.value)
 
