@@ -17,12 +17,37 @@ header {
 .row {
     display: flex;
     flex-direction: column;
-    height: 20px;
+    height: 30px;
     width: 400px;
+    align-items: center;
   
-    align-items: flex-start;
+
   
 }
+
+.five-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    align-items: flex-start;
+
+}
+
+p {
+    border: 1px white ;    
+}
+
+#search-city-side{
+    background: whitesmoke
+}
+
+li {
+        list-style-type: none;
+   
+}
+  
 
 #footer { 
     background-color:lightgray;
