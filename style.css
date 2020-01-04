@@ -51,6 +51,15 @@ li {
 #time {
     font-size: 2em;
 }
+
+#temp, #hum, #wind, #uv {
+    font-size: 1.5em;
+}
+
+#uv {
+    background-color: red;
+    color: white;
+}
   
 
 #footer { 

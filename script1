@@ -25,13 +25,13 @@ $(document).ready(function(){
 //ajax call for weather  
         $.ajax({
         // http:// added
-        url: weatherURL,
+        url: weatherURL,a
         type: "GET",
         dataType: "JSON",
         success: function(data, weatherURL) {
 
 
-     $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='http://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
+            $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='http://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
             $('#temp').html("Temp: " + data.main.temp + "°F");
            
             $('#hum').html("Hum: " + data.main.humidity);
