@@ -16,9 +16,9 @@ $(document).ready(function(){
 
         var weatherURL2 = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
         
-        var fiveDay2 = "http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&units=imperial&cnt=7&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var fiveDay2 = "http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
-        var uvIndex2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&cnt=7&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var uvIndex2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
         $.ajax({
             // http:// added
@@ -59,7 +59,7 @@ $(document).ready(function(){
                             dataType: "JSON",
                             success: function(data) {
                           
-                               $('#uv').html("UV Index:" + " " + data.value);
+                               $('#uv').html(+' '+ data.value);
                          
         
         
@@ -72,12 +72,13 @@ $(document).ready(function(){
             });      
 
 $('.btn').click(function (){
+  
 
     var input = $("input:text").val();
 
     
 
-    var fiveDay = "http://api.openweathermap.org/data/2.5/forecast?q="+input+"&units=imperial&cnt=7&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+    var fiveDay = "http://api.openweathermap.org/data/2.5/forecast?q="+input+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
      var weatherURL = "http://api.openweathermap.org/data/2.5/weather?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
@@ -86,7 +87,11 @@ $('.btn').click(function (){
 
     localStorage.setItem(".btn",(input));
        var li = "<li>" + input + "</li>";
-           $('.list-group').append(li) 
+           $('.list-group').append(li)
+           
+      
+
+           
 
 //ajax call for weather  
       $.ajax({
@@ -133,7 +138,7 @@ $('.btn').click(function (){
                     dataType: "JSON",
                     success: function(data) {
                   
-                       $('#uv').html(data.value);
+                       $('#uv').html(+' '+ data.value);
                  
 
 

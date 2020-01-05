@@ -56,11 +56,22 @@ li {
     font-size: 1.5em;
 }
 
-#uv {
-    background-color: red;
-    color: white;
+
+#uvi {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    
 }
-  
+
+
+#uv {
+    font-size:  1em;
+    background-color: darkred;
+    color: white;
+
+}
+
 
 #footer { 
     background-color:lightgray;
