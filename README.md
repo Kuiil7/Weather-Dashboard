@@ -32,5 +32,5 @@ This is a weather dashboard application with search functionality to find curren
   * Humidity
 
 
-![day planner demo](weather.jpg)
+![day planner demo](weather1.jpg)
 

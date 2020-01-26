@@ -127,7 +127,8 @@ $('.btn').click(function (){
                   weeklyForecast += "</p>" // Closing paragraph tag
                     });
              
-                    
+                    $("#five-title").html("Five-Day/3hr Forecast");
+
                 $(".five-container").html(weeklyForecast);
                     
                 
@@ -137,7 +138,7 @@ $('.btn').click(function (){
                    type: "GET",
                     dataType: "JSON",
                     success: function(data) {
-                  
+                     
                        $('#uv').html(+' '+ data.value);
                  
 
