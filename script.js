@@ -23,6 +23,7 @@ $(document).ready(function(){
         var uvIndex2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API call to user's current location
+$(function() { 
         $.ajax({
             url: weatherURL2,
             dataType: "JSON",
@@ -160,5 +161,5 @@ $('.btn').click(function (){
             }
 });
  
-});
+});});
  
