@@ -32,6 +32,7 @@ This is a weather dashboard application with search functionality to find curren
   * Humidity
 
 
-![Weather Dashboard](./assets/weather1.jpg)
+![Weather Dashboard](./assets/weather.1.png)
+![Weather Dashboard](./assets/weather.2.png)
 
 
