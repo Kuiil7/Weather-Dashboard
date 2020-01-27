@@ -16,7 +16,7 @@ This is a weather dashboard application with search functionality to find curren
 
   * UV index
 
-Also, a 5-Day/3 hour Forecast displays below the current weather conditions. Each day for the 5-Day/3hr Forecast that displays the following:
+Also, a 5-Day/3 hour Forecast displays below the current weather conditions that displays the following:
 
   * Date
 
@@ -27,7 +27,7 @@ Also, a 5-Day/3 hour Forecast displays below the current weather conditions. Eac
   * Humidity
 
 
-![Current Location](assets/wea1.png)
-![User Input](assets/wea2.png)
+![Current Location](wea1.png)
+![User Input](wea2.png)
 
 
