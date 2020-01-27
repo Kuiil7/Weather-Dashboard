@@ -32,6 +32,7 @@ header {
     background-color: #007bff;
     color: white;
     align-items: flex-start;
+    flex-wrap: wrap;
 
 }
 
