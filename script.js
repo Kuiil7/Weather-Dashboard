@@ -14,13 +14,13 @@ $(document).ready(function(){
         var long = position.coords.longitude;
 
 //API URL based on user's current location
-        var weatherURL2 = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var weatherURL2 = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API URL 5-day/3hr forecast based on user's current location       
-        var fiveDay2 = "http://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var fiveDay2 = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API URL for UV index based on user's location
-        var uvIndex2 = "http://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var uvIndex2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API call to user's current location
 $(function() { 
@@ -32,7 +32,7 @@ $(function() {
 //added moments.js format to weather data
               $("#time").text(moment().format("L"));
   //selected City name, country and icon added to html
-                $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='http://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
+                $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='https://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
    //selected city temperature added to html   
    $('#temp').html("Temp: " + data.main.temp + "°F");
 
@@ -51,7 +51,7 @@ $(function() {
                       $.each(data.list, function(index, value) {
                         weeklyForecast += "<p >" // Opening paragraph tag
                         weeklyForecast += moment(value.dt_txt).format("L");// Day
-                        weeklyForecast += "<br>" + "<img src='http://openweathermap.org/img/w/" + value.weather[0].icon + ".png'> </br>" // Icon
+                        weeklyForecast += "<br>" + "<img src='https://openweathermap.org/img/w/" + value.weather[0].icon + ".png'> </br>" // Icon
                         weeklyForecast += "<br>Temp:"+' '  + value.main.temp + "&degF" + "</br>" ; // Description
                         weeklyForecast += "<br> Humidity:"+' '  + value.main.humidity + "%"+ "</br>" ; // Description
                         weeklyForecast += "</p>" // Closing paragraph tag
@@ -85,11 +85,11 @@ $('.btn').click(function (){
 
     
 //5 day/3hr forecast API URL
-    var fiveDay = "http://api.openweathermap.org/data/2.5/forecast?q="+input+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+    var fiveDay = "https://api.openweathermap.org/data/2.5/forecast?q="+input+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 //user input city name search URL
-     var weatherURL = "http://api.openweathermap.org/data/2.5/weather?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+     var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 //User input-selected UV search URL
-     var uvIndex = "http://api.openweathermap.org/data/2.5/uvi?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+     var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //storing button input to local storage 
    localStorage.setItem(".btn",(input));
@@ -106,7 +106,7 @@ $('.btn').click(function (){
       dataType: "JSON",
       success: function(data) {
         $("#time").text(moment().format("LLL"));
-          $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='http://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
+          $('#city-date').html("<h3>"  + data.name  +' ' + data.sys.country + ' ' + "<img src='https://openweathermap.org/img/w/" +  data.weather[0].icon + ".png'>"); 
 
           $('#temp').html("Temp: " + data.main.temp + "°F");
          
@@ -124,7 +124,7 @@ $('.btn').click(function (){
                 $.each(data.list, function(index, value) {
                   weeklyForecast += "<p >" // Opening paragraph tag
                   weeklyForecast += moment(value.dt_txt).format("L");// Day
-                  weeklyForecast += "<br>" + "<img src='http://openweathermap.org/img/w/" + value.weather[0].icon + ".png'> </br>" // Icon
+                  weeklyForecast += "<br>" + "<img src='https://openweathermap.org/img/w/" + value.weather[0].icon + ".png'> </br>" // Icon
                   weeklyForecast += "<br>Temp:"+' '  + value.main.temp + "&degF" + "</br>" ; // Description
                   weeklyForecast += "<br> Humidity:"+' '  + value.main.humidity + "%"+ "</br>" ; // Description
                   weeklyForecast += "</p>" // Closing paragraph tag
@@ -135,7 +135,7 @@ $('.btn').click(function (){
                     
                 
                 $.ajax({
-                    // http:// added
+                    // https:// added
                     url: uvIndex,
                    type: "GET",
                     dataType: "JSON",
