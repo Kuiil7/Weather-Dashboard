@@ -27,7 +27,7 @@ Also, a 5-Day/3 hour Forecast displays below the current weather conditions that
   * Humidity
 
 
-![Current Location](wea1.png)
-![User Input](wea2.png)
+![Current Location](/assetswea1.png?raw=true)
+![User Input](/assets/wea2.png?raw=true)
 
 
