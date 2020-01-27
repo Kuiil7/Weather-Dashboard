@@ -14,7 +14,7 @@ $(document).ready(function(){
         var long = position.coords.longitude;
 
 //API URL based on user's current location
-        var weatherURL2 = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon=" + long + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var weatherURL2 = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + long + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API URL 5-day/3hr forecast based on user's current location       
         var fiveDay2 = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long+ "&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
