@@ -14,13 +14,13 @@ $(document).ready(function(){
         var long = position.coords.longitude;
 
 //API URL based on user's current location
-        var weatherURL2 = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var weatherURL2 = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon=" + long + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API URL 5-day/3hr forecast based on user's current location       
-        var fiveDay2 = "https://api.openweathermap.org/data/2.5/forecast?lat="+lat+"&lon="+long+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var fiveDay2 = "https://api.openweathermap.org/data/2.5/forecast?lat=" + lat + "&lon=" + long+ "&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API URL for UV index based on user's location
-        var uvIndex2 = "https://api.openweathermap.org/data/2.5/uvi?lat="+lat+"&lon="+long+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+        var uvIndex2 = "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + long + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //API call to user's current location
 $(function() { 
@@ -85,11 +85,11 @@ $('.btn').click(function (){
 
     
 //5 day/3hr forecast API URL
-    var fiveDay = "https://api.openweathermap.org/data/2.5/forecast?q="+input+"&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+    var fiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=" + input + "&units=imperial&cnt=12&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 //user input city name search URL
-     var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+     var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=" + input + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 //User input-selected UV search URL
-     var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?q="+input+"&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
+     var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?q=" + input + "&units=imperial&APPID=ed2d8b9a647015246d1c2a69c8fa34a3";
 
 //storing button input to local storage 
    localStorage.setItem(".btn",(input));
