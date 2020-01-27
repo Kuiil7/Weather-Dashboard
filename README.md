@@ -27,7 +27,7 @@ Also, a 5-Day/3 hour Forecast displays below the current weather conditions. Eac
   * Humidity
 
 
-![CurrentLocation](assets/weather.1.png)
-![UserInput](assets/weather.2.png)
+![Current Location](assets/wea1.png)
+![User Input](assets/wea2.png)
 
 
