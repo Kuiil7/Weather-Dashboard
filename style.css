@@ -27,7 +27,6 @@ header {
 
 .five-container {
     display: flex;
-    flex-direction: row;
     padding: 10px;
     background-color: #007bff;
     color: white;
