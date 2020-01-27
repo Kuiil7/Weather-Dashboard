@@ -1,5 +1,4 @@
-This is a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities. 
-
+This is a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities including a search history.
 
 # AJAX to hook into the API to retrieve data in JSON format and display the following under current weather conditions:
 
@@ -17,9 +16,7 @@ This is a weather dashboard application with search functionality to find curren
 
   * UV index
 
-# Includes a search history.
-
-#Include a 5-Day/3 hour Forecast below the current weather conditions. Each day for the 5-Day Forecast should display the following:
+Also, a 5-Day/3 hour Forecast displays below the current weather conditions. Each day for the 5-Day/3hr Forecast that displays the following:
 
   * Date
 
@@ -30,7 +27,7 @@ This is a weather dashboard application with search functionality to find curren
   * Humidity
 
 
-![Current Location](/assets/weather.1.png)
-![User Input](/assets/weather.2.png)
+![Current Location](assets/weather.1.png)
+![User Input](assets/weather.2.png)
 
 
