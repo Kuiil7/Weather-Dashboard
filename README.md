@@ -1,9 +1,7 @@
 This is a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities. 
 
 
-# AJAX to hook into the API to retrieve data in JSON format.
-
-# Displays the following under current weather conditions:
+# AJAX to hook into the API to retrieve data in JSON format and display the following under current weather conditions:
 
   * City
 
@@ -32,7 +30,7 @@ This is a weather dashboard application with search functionality to find curren
   * Humidity
 
 
-![Weather Dashboard](./assets/weather.1.png)
-![Weather Dashboard](./assets/weather.2.png)
+![Weather Dashboard](/assets/weather.1.png)
+![Weather Dashboard](/assets/weather.2.png)
 
 
