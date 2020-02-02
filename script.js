@@ -111,8 +111,9 @@ navigator.geolocation.getCurrentPosition(function(position) {
                localStorage.setItem(".btn", (input));
           
 					//setting up a list variable to append user input
-               $('.list-group').append($("<a href='" + weatherURL + "'> </a>").html('<li class="list-group-item">' + input + '</li>'));
-               
+					var li = '<li class="list-group-item">' + input + '</li>';
+					$('.list-group').append(li)
+					
 
 					//Duplicating ajax URLs, calls, and individual parameters to appear on usuer input based on the steps in current locaiton 
             
