@@ -24,7 +24,7 @@ navigator.geolocation.getCurrentPosition(function(position) {
 			success: function(data) {
             //Input search results
 				//added moments.js format to weather data
-				$("#time").text(moment().format("L"));
+				$("#time").text(moment().format("LL"));
 				//selected City name, country and icon added to html
 				$('#city-date').html("<h3>" + data.name + ' ' + data.sys.country + ' ' + "<img src='https://openweathermap.org/img/w/" + data.weather[0].icon + ".png'>");
 				//selected city temperature  

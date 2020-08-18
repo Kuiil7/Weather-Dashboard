@@ -1,40 +1,42 @@
+# Weather Dashboard
+
 This is a weather dashboard application with search functionality to find current weather conditions and the future 5 day weather forecast, and search for multiple cities including a search history.
 
-# AJAX to hook into the API to retrieve data in JSON format and display the following under current weather conditions:
+## FUNCTIONALITY
 
-  * City
+ AJAX to hook into the API to retrieve data in JSON format and display the following under current weather conditions:
 
-  * Date
+* City
 
-  * Icon image (visual representation of weather conditions)
+* Date
 
-  * Temperature
+* Icon image (visual representation of weather conditions)
 
-  * Humidity
+* Temperature
 
-  * Wind speed
+* Humidity
 
-  * UV index
+* Wind speed
+
+* UV index
 
 Also, a 5-Day Forecast displays below the current weather conditions that displays the following:
 
-  * Date
+* Date
 
-  * Icon image (visual representation of weather conditions)
+* Icon image (visual representation of weather conditions)
 
-  * Temperature
+* Temperature
 
-  * Humidity
+* Humidity
 
-  Created with: 
-    # Bootstrap
-    # jQuery
-    # Moments.js
-    # Ajax
-    # JSON data
+## BUILT WITH
 
+* Bootstrap
+* jQuery
+* ments.js
+* Ajax
+* JSON data
 
-![Current Location](/assetswea1.png)
-![User Input](/assets/wea2.png)
-
-
+![Current Location](/Assets/wea1.png)
+![User Input](/Assets/wea2.png)
