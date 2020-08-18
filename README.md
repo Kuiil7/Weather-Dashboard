@@ -1,6 +1,9 @@
 # Weather Dashboard
+![Current Location](/Assets/wea_loc.png)
 
 This is a weather dashboard application with search functionality to find current weather conditions and the future 5 day weather forecast, and search for multiple cities including a search history.
+
+![User Input](/Assets/wea_user.png)
 
 ## FUNCTIONALITY
 
@@ -37,6 +40,3 @@ Also, a 5-Day Forecast displays below the current weather conditions that displa
 * ments.js
 * Ajax
 * JSON data
-
-![Current Location](/Assets/wea_loc.png)
-![User Input](/Assets/wea_user.png)
