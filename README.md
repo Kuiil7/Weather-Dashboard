@@ -38,5 +38,5 @@ Also, a 5-Day Forecast displays below the current weather conditions that displa
 * Ajax
 * JSON data
 
-![Current Location](/Assets/wea1.png)
-![User Input](/Assets/wea2.png)
+![Current Location](/Assets/wea_loc.png)
+![User Input](/Assets/wea_user.png)
