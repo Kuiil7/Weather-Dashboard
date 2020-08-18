@@ -1,5 +1,5 @@
 # Weather Dashboard
-![APP DEMO](/Assets/wea_dash_two.png)
+![APP DEMO](wea_dash_two.png)
 
 This is a weather dashboard application with search functionality to find current weather conditions and the future 5 day weather forecast, and search for multiple cities including a search history.
 
