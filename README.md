@@ -30,10 +30,6 @@ Also, a 5-Day Forecast displays below the current weather conditions that displa
 
 * Humidity
 
-## USAGE
-    npm start
-
-
 ## BUILT WITH
 
 * Bootstrap
