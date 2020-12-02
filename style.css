@@ -10,18 +10,16 @@ header {
 .container2 {
     display: flex;
 }
-.row {
-	display: flex;
-	flex-direction: column;
-	height: 30px;
-	width: 400px;
-	align-items: center;
+
+#uv {
+	background-color: darkred;
+	color: white;
 }
 .five-container {
 	display: flex;
-	flex-direction: row;
-
- 
+	flex-direction: row;;
+	position: relative;
+	flex-wrap: wrap;
     
 }
 .day1, .day2, .day3, .day4, .day5 {
@@ -30,10 +28,11 @@ header {
     padding-top:25px;
 	background-color: #007bff;
 	color: white;
-	height: 200px;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
+	height: 250px;
+	width: 150px;
+	margin: 10px;
+	padding: 10px;
+ 
   border-radius: 5px;
 }
 
@@ -49,22 +48,16 @@ p {
 li {
 	list-style-type: none;
 }
-#time {
-	font-size: 2em;
-}
-#temp, #hum, #wind, #uv {
-	font-size: 1.5em;
-}
+
+
+
+
 #uvi {
 	display: flex;
 	flex-direction: row;
 	font-size: 1.5em;
 }
-#uv {
-	font-size: 1em;
-	background-color: darkred;
-	color: white;
-}
+
 #footer {
 	background-color: lightgray;
 	height: 25px;

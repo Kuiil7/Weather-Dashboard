@@ -1,0 +1,23 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "Retrieev data to display current city and weather conditions",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kuiil7/Weather-Dashboard.git"
+  },
+  "author": "JAM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kuiil7/Weather-Dashboard/issues"
+  },
+  "homepage": "https://github.com/Kuiil7/Weather-Dashboard#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
+}
