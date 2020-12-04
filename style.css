@@ -7,22 +7,22 @@ header {
 	justify-content: center;
 	font-size: 2em;
 }
-.container2 {
-    display: flex;
-}
+
 
 #uv {
 	background-color: darkred;
 	color: white;
 }
-.five-container {
+.day-wrapper {
 	display: flex;
 	flex-direction: row;;
 	position: relative;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
     
 }
-.day1, .day2, .day3, .day4, .day5 {
+.days {
 	display: flex;
 	flex-direction: column;	flex-direction: column;
     padding-top:25px;
